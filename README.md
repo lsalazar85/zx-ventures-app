@@ -19,14 +19,6 @@ Web app developed in Next.js
     yarn start
 ```
 
-## Backend
-
-### Npm
-```
-    npm install
-    npm start
-```
-
 ## Development Technologies
 * Modern Javascript ( ES6 )
 * Next.js
