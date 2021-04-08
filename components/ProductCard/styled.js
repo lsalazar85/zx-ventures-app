@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const ProductCardWrapper = styled.main`
     display: flex;
     flex-direction: column;
-    width: 10rem;
+    width: 12rem;
     border: 2px solid #1F396D;
     padding: 1rem;
     border-radius: 4px;
@@ -12,6 +12,12 @@ const ProductCardWrapper = styled.main`
   &:last-child {
     margin-right: 0;
   }
+`
+
+const ProductTitle = styled.span`
+  display: flex;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
 `
 
 const ProductImg = styled.div`
@@ -55,5 +61,5 @@ const ProductButtons = styled.div`
   }
 `
 
-export { ProductImg, ProductCardWrapper, ProductPrice, ProductButtons }
+export { ProductImg, ProductCardWrapper, ProductPrice, ProductButtons, ProductTitle }
 

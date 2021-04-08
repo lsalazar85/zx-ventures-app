@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import {MainWrapper, ProductsWrapper, Title, Header, ProductList} from "./styled";
+import { MainWrapper, ProductsWrapper, Title, Header, ProductList } from "./styled";
 import ProductCard  from '../components/ProductCard'
 import { GlobalStyle } from "../styles/GlobalStyle";
 
@@ -18,10 +18,11 @@ const Home = () =>  {
       <ProductsWrapper>
           <Title>Productos</Title>
           <ProductList>
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
+              <ProductCard
+                  title='Vino Novecento Raices 750 ml - Tinto Cabernet Sauvignon'
+                  src='https://cdn.shopify.com/s/files/1/0254/2947/5433/products/sec-andes-origen-lata-473-rubia_95x95@2x.jpg?v=1607115535?nocache=0.04657434384605352'
+                  price={'18.20'}
+              />
           </ProductList>
       </ProductsWrapper>
     </MainWrapper>
