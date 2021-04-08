@@ -19,6 +19,13 @@ Web app developed in Next.js
     yarn start
 ```
 
+## Api - Server
+
+### Npm
+```
+    npm start
+```
+
 ## Development Technologies
 * Modern Javascript ( ES6 )
 * Next.js
@@ -28,4 +35,5 @@ Web app developed in Next.js
 * React Testing Library & Jest
 * Styled-Components
 * Lodash
+* JSON Server
 
