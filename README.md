@@ -6,12 +6,14 @@ Web app developed in Next.js
 ## Run Project
 
 ## Frontend
+Starts on `http://localhost:3000`
 
 ### Npm
 ```
     npm install
     npm start
 ```
+
 
 ### Yarn
 ```
@@ -20,6 +22,7 @@ Web app developed in Next.js
 ```
 
 ## Api - Server
+Starts on `http://localhost:5000`
 
 ### Npm
 ```
