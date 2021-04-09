@@ -33,7 +33,6 @@ Starts on `http://localhost:5000`
 * Modern Javascript ( ES6 )
 * Next.js
 * React.js
-* React Hooks
 * React Context State
 * React Testing Library & Jest
 * Styled-Components
