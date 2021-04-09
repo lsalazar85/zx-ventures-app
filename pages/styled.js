@@ -42,5 +42,18 @@ const Total = styled.span`
     color: #ffffff;
 `
 
+const Categories = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0;
+    
+    button {
+      margin-right: 0.5rem;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+`
 
-export { MainWrapper, ProductsWrapper, Title, Header, ProductList, Total};
+export { MainWrapper, ProductsWrapper, Title, Header, ProductList, Total, Categories};
