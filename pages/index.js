@@ -115,7 +115,7 @@ const Home = () =>  {
       </ProductsWrapper>
         <Modal
             title='Recomendados'
-            width="50%"
+            width="1000px"
             show={modalState}
             onClose={() => setModalState(false)}
             closeModal

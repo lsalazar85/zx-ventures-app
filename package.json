@@ -1,32 +1,11 @@
 {
   "name": "zx-ventures-app",
   "version": "0.1.0",
-  "jest": {
-    "moduleNameMapper": {
-      "^components/(.*)": "<rootDir>/src/components/$1"
-    },
-    "collectCoverageFrom": [
-      "**/components/**/*.{js,jsx}",
-      "!<rootDir>/node_modules/",
-      "!<rootDir>/path/to/dir/"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    },
-    "coverageReporters": [
-      "text"
-    ]
-  },
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next dev",
     "test": "jest"
   },
   "dependencies": {
