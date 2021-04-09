@@ -35,7 +35,12 @@ const ProductList = styled.div`
     display: flex;
     flex-direction: row;
     padding: 1rem ;
+    flex-wrap: wrap;
+`
+
+const Total = styled.span`
+    color: #ffffff;
 `
 
 
-export { MainWrapper, ProductsWrapper, Title, Header, ProductList  };
+export { MainWrapper, ProductsWrapper, Title, Header, ProductList, Total};

@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-const ProductCardWrapper = styled.main`
+const ProductCardWrapper = styled.a`
     display: flex;
     flex-direction: column;
-    width: 12rem;
+    width: ${props => props.width};
     border: 2px solid #1F396D;
     padding: 1rem;
     border-radius: 4px;
-    margin-right: 1rem;
+    margin: 0 0.7rem 0.7rem 0;
   
   &:last-child {
     margin-right: 0;
@@ -22,10 +22,14 @@ const ProductTitle = styled.span`
 
 const ProductImg = styled.div`
     display: flex;
+    justify-content: center;
+    height: 6.25rem;
+    cursor: pointer;
     
     img {
-      width: 100%;
+      width: auto;
       height: auto;
+      max-height: 6.25rem;
       border-radius: 4px;
     }
 `

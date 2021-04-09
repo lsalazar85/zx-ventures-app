@@ -1,10 +1,12 @@
+import { string, func } from 'prop-types';
 import { ProductImg, ProductCardWrapper, ProductPrice, ProductButtons, ProductTitle} from './styled'
 import Button from "../Button";
 
-const ProductCard = ({ title, src, price }) => (
-    <ProductCardWrapper>
+
+const ProductCard = ({ title, src, price, onClick, width, add, subtraction}) => (
+    <ProductCardWrapper width={width}>
         <ProductTitle>{title}</ProductTitle>
-        <ProductImg>
+        <ProductImg onClick={onClick}>
             <img src={src} alt='Product Img' />
         </ProductImg>
         <ProductPrice>
@@ -12,10 +14,25 @@ const ProductCard = ({ title, src, price }) => (
             <span>{price}$</span>
         </ProductPrice>
         <ProductButtons>
-            <Button>Hola</Button>
-            <Button>Chao</Button>
+            <Button onClick={subtraction}>-</Button>
+            <Button onClick={add}>+</Button>
         </ProductButtons>
     </ProductCardWrapper>
 )
+
+ProductCard.defaultProps = {
+    width: '19rem',
+}
+
+ProductCard.propTypes = {
+    title: string.isRequired,
+    price: string.isRequired,
+    onClick: func,
+    width: string,
+    add: func.isRequired,
+    subtraction: func.isRequired,
+}
+
+
 
 export default ProductCard;
