@@ -59,6 +59,8 @@ const Home = () =>  {
         getData(setCategories, '/categories')
     }, []);
 
+    console.log(products)
+
   return (
     <MainWrapper>
         <GlobalStyle />
